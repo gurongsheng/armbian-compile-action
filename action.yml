@@ -31,8 +31,8 @@ runs:
         if [ ${{ inputs.flavor }} == "debian" ]
         then
           echo "release=sid" >> $GITHUB_ENV
-          echo "build-minimal=no" >> $GITHUB_ENV
-          echo "build-desktop=yes" >> $GITHUB_ENV
+          echo "build-minimal=yes" >> $GITHUB_ENV
+          echo "build-desktop=no" >> $GITHUB_ENV
           echo "desktop-environment=gnome" >> $GITHUB_ENV
           echo "desktop-environment-config-name=config_base" >> $GITHUB_ENV
           echo "expert=no" >> $GITHUB_ENV
